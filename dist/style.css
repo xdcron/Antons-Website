@@ -7,6 +7,19 @@
         transform: translateX(0);
     }
 }
+@keyframes slideInLeft {
+    from{
+        transform: translateX(0);
+    }
+
+    to{
+        transform: translateX(500px);
+    }
+}
+
+.close-menu{
+    animation: slideInLeft 0.5s ease-out;
+}
 
 .nav-list{
     

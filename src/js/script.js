@@ -20,15 +20,22 @@ const imageDisplay = document.getElementById("display-img");
 document.cookie = "myCookie=Strict; SameSite=Lax";
 
 menu.addEventListener("click", () => {
+  mobileNav.classList.remove("translate-x-[500px]");
   mobileNav.classList.remove("hidden");
   menu.classList.add("hidden");
+  closeMenu.classList.remove('hidden')
   mobileNav.classList.add("nav-list");
 });
 
 closeMenu.addEventListener("click", () => {
-  mobileNav.classList.add("hidden");
-  menu.classList.remove("hidden");
   mobileNav.classList.remove("nav-list");
+  mobileNav.classList.add("translate-x-[500px]");
+  menu.classList.remove("hidden");
+  closeMenu.classList.add('hidden')
+  mobileNav.classList.add("close-menu");
+  setTimeout(() => {
+    mobileNav.classList.add("hidden");
+  }, 400)
 });
 
 tabContainer.addEventListener("click", function (e) {
