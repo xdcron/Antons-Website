@@ -1162,20 +1162,12 @@ input:checked + .toggle-bg {
   z-index: 5;
 }
 
-.order-\[-1\] {
-  order: -1;
-}
-
 .order-1 {
   order: 1;
 }
 
-.order-2 {
-  order: 2;
-}
-
-.m-auto {
-  margin: auto;
+.order-\[-1\] {
+  order: -1;
 }
 
 .mx-4 {
@@ -1211,11 +1203,6 @@ input:checked + .toggle-bg {
 .my-8 {
   margin-top: 2rem;
   margin-bottom: 2rem;
-}
-
-.mx-auto {
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .mb-1 {
@@ -1378,28 +1365,16 @@ input:checked + .toggle-bg {
   max-height: 350px;
 }
 
+.max-h-\[400px\] {
+  max-height: 400px;
+}
+
 .max-h-\[450px\] {
   max-height: 450px;
 }
 
 .max-h-\[500px\] {
   max-height: 500px;
-}
-
-.max-h-\[550px\] {
-  max-height: 550px;
-}
-
-.max-h-\[340px\] {
-  max-height: 340px;
-}
-
-.max-h-\[410px\] {
-  max-height: 410px;
-}
-
-.max-h-\[400px\] {
-  max-height: 400px;
 }
 
 .min-h-\[410px\] {
@@ -1446,10 +1421,6 @@ input:checked + .toggle-bg {
   width: 100%;
 }
 
-.w-\[400px\] {
-  width: 400px;
-}
-
 .min-w-\[300px\] {
   min-width: 300px;
 }
@@ -1488,10 +1459,6 @@ input:checked + .toggle-bg {
 
 .max-w-full {
   max-width: 100%;
-}
-
-.max-w-\[550px\] {
-  max-width: 550px;
 }
 
 .flex-1 {
@@ -1671,14 +1638,6 @@ input:checked + .toggle-bg {
 
 .gap-8 {
   gap: 2rem;
-}
-
-.gap-14 {
-  gap: 3.5rem;
-}
-
-.gap-12 {
-  gap: 3rem;
 }
 
 .space-x-2 > :not([hidden]) ~ :not([hidden]) {
@@ -1873,6 +1832,11 @@ input:checked + .toggle-bg {
   padding-right: 2.5rem;
 }
 
+.px-12 {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
 .px-14 {
   padding-left: 3.5rem;
   padding-right: 3.5rem;
@@ -1896,11 +1860,6 @@ input:checked + .toggle-bg {
 .px-5 {
   padding-left: 1.25rem;
   padding-right: 1.25rem;
-}
-
-.px-6 {
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
 }
 
 .px-8 {
@@ -1966,11 +1925,6 @@ input:checked + .toggle-bg {
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
-}
-
-.px-12 {
-  padding-left: 3rem;
-  padding-right: 3rem;
 }
 
 .pb-20 {
@@ -2049,6 +2003,10 @@ input:checked + .toggle-bg {
   font-size: 0.6rem;
 }
 
+.text-\[0\.9rem\] {
+  font-size: 0.9rem;
+}
+
 .text-\[1\.1rem\] {
   font-size: 1.1rem;
 }
@@ -2059,10 +2017,6 @@ input:checked + .toggle-bg {
 
 .text-\[1\.3rem\] {
   font-size: 1.3rem;
-}
-
-.text-\[1\.4rem\] {
-  font-size: 1.4rem;
 }
 
 .text-\[1\.5rem\] {
@@ -2105,10 +2059,6 @@ input:checked + .toggle-bg {
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
-}
-
-.text-\[0\.9rem\] {
-  font-size: 0.9rem;
 }
 
 .font-\[600\] {
@@ -2545,26 +2495,8 @@ input:checked + .toggle-bg {
     order: 1;
   }
 
-  .md\:order-2 {
-    order: 2;
-  }
-
   .md\:order-\[-1\] {
     order: -1;
-  }
-
-  .md\:order-\[0\] {
-    order: 0;
-  }
-
-  .md\:mx-20 {
-    margin-left: 5rem;
-    margin-right: 5rem;
-  }
-
-  .md\:mx-32 {
-    margin-left: 8rem;
-    margin-right: 8rem;
   }
 
   .md\:mx-40 {
@@ -2616,22 +2548,6 @@ input:checked + .toggle-bg {
     height: auto;
   }
 
-  .md\:h-\[500px\] {
-    height: 500px;
-  }
-
-  .md\:h-\[561\.06px\] {
-    height: 561.06px;
-  }
-
-  .md\:h-\[410\] {
-    height: 410;
-  }
-
-  .md\:h-\[410px\] {
-    height: 410px;
-  }
-
   .md\:w-\[100\%\] {
     width: 100%;
   }
@@ -2654,22 +2570,6 @@ input:checked + .toggle-bg {
 
   .md\:w-full {
     width: 100%;
-  }
-
-  .md\:w-\[500px\] {
-    width: 500px;
-  }
-
-  .md\:w-\[740\.5px\] {
-    width: 740.5px;
-  }
-
-  .md\:w-\[550\.5px\] {
-    width: 550.5px;
-  }
-
-  .md\:w-\[550px\] {
-    width: 550px;
   }
 
   .md\:min-w-\[550px\] {
@@ -2713,10 +2613,6 @@ input:checked + .toggle-bg {
     justify-content: space-between;
   }
 
-  .md\:justify-around {
-    justify-content: space-around;
-  }
-
   .md\:gap-1 {
     gap: 0.25rem;
   }
@@ -2725,24 +2621,23 @@ input:checked + .toggle-bg {
     gap: 5rem;
   }
 
+  .md\:gap-3 {
+    gap: 0.75rem;
+  }
+
   .md\:gap-x-12 {
     -moz-column-gap: 3rem;
          column-gap: 3rem;
   }
 
-  .md\:gap-x-9 {
-    -moz-column-gap: 2.25rem;
-         column-gap: 2.25rem;
-  }
-
-  .md\:gap-x-5 {
-    -moz-column-gap: 1.25rem;
-         column-gap: 1.25rem;
-  }
-
   .md\:gap-x-6 {
     -moz-column-gap: 1.5rem;
          column-gap: 1.5rem;
+  }
+
+  .md\:gap-x-9 {
+    -moz-column-gap: 2.25rem;
+         column-gap: 2.25rem;
   }
 
   .md\:self-start {
