@@ -147,8 +147,10 @@ galerBackBtn.addEventListener("click", () => {
 // SMOOTH SCROLLING
 function scrollIntoView(parent, target) {
   document.getElementById(parent).addEventListener("click", function (e) {
+    if (!e.target.classList.contains(target)) return;
     e.preventDefault();
     // MATCHING STRATEGY
+
     if (e.target.classList.contains(target)) {
       const id = e.target.getAttribute("href");
       document.querySelector(id).scrollIntoView({ behavior: "smooth" });

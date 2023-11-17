@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Men With Manners</title>
+    <link rel="stylesheet" href="dist/output.css" />
+    <link rel="stylesheet" href="dist/style.css" />
+    <link rel="icon" href="images/logo.png" type="image/png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800;900&family=Poppins:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="sticky top-0 bg-gold pb-[0.3rem] z-10">
+      <div
+        class="w-full px-14 bg-gold pt-1 flex justify-center items-center gap-3"
+      >
+        <a target="_blank" href="https://www.facebook.com/thepurpose7">
+          <img src="images/facebook.svg" alt="facebook" />
+        </a>
+        <a
+          target="_blank"
+          href="https://www.youtube.com/results?search_query=the+power+of+purpose+africa"
+        >
+          <img src="images/youtube.svg" alt="facebook" />
+        </a>
+        <a target="_blank" href="https://www.instagram.com/anthonynm7/">
+          <img src="images/instagram.svg" alt="facebook" />
+        </a>
+        <div class="pt-1 flex gap-2">
+          <a
+            href="tel:+264814063967"
+            class="text-lightGold text-[0.6rem] md:text-[0.9rem]"
+            >Phone: <span class="underline">+264 81 406 3967</span></a
+          >
+          <a
+            href="mailto:thepowerofpurposeafrica@gmail.com"
+            class="text-lightGold text-[0.6rem] md:text-[0.9rem]"
+          >
+            Email:
+            <span class="underline">thepowerofpurposeafrica@gmail.com</span></a
+          >
+        </div>
+      </div>
+      <nav id="nav" class="md:flex md:justify-between md:items-center px-8">
+        <div class="mx-4 flex items-center justify-between">
+          <div>
+            <a href="index.html"
+              ><img
+                class="h-16 inline cursor-pointer"
+                src="images/logo.png"
+                alt="logo"
+            /></a>
+          </div>
+          <div>
+            <p
+              class="uppercase text-lightGold text-[1.3rem] font-bold md:ml-3 mr-4"
+            >
+              The Power of Purpose Africa
+            </p>
+          </div>
+          <span
+            id="menu"
+            class="z-10 md:hidden cursor-pointer hover:translate-y-[-5px] transition-all ease-in duration-100"
+          >
+            <span class="sr-only">Open main menu</span>
+            <svg
+              class="w-6 h-6"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 17 14"
+            >
+              <path
+                stroke="#F9F18F"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M1 1h15M1 7h15M1 13h15"
+              />
+            </svg>
+          </span>
+        </div>
+
+        <div
+          id="nav-list"
+          class="md:flex w-[50%] sm:right-0 font-[600] text-gold md:text-[1.2rem] z-[5] md:z-auto md:static absolute right-0 top-[20px] md:w-auto hidden md:opacity-100 md:translate-x-0"
+        >
+          <span
+            id="close"
+            class="flex justify-end pr-5 cursor-pointer transition-all ease-in duration-100"
+          >
+            <span class="sr-only">close main menu</span>
+            <img class="md:hidden" src="images/x.svg" alt="close icon" />
+          </span>
+          <ul
+            class="bg-gold md:flex w-full sm:right-0 font-[600] text-lightGold md:text-[0.9rem] z-[5] md:z-auto md:static absolute right-0 top-[50px] md:w-auto pr-3 gap-4 md:opacity-100 h-screen md:h-auto"
+          >
+            <li class="my-4 flex justify-center">
+              <a
+                class="hover:text-lightGold hover:translate-y-[-4px] duration-200"
+                href="/"
+                target="_blank"
+              >
+                Home
+              </a>
+            </li>
+            <li class="my-4 flex justify-center">
+              <a
+                class="hover:text-lightGold hover:translate-y-[-4px] duration-200"
+                href="genderconsulting.html"
+                target="_blank"
+              >
+                Gender Consulting
+              </a>
+            </li>
+            <li class="my-4 flex justify-center">
+              <a
+                class="hover:text-lightGold hover:translate-y-[-4px] duration-200"
+                href="wonderwomen.html"
+                target="_blank"
+              >
+                Wonder Women
+              </a>
+            </li>
+            <li class="md:relative top-[-10px] my-4 flex justify-center">
+              <a
+                class="bg-lightGold p-2 rounded-md text-gold hover:translate-y-[-4px] hover:bg-yellow-200 transition-all ease-in duration-200 hover:text-yellow-500 nav-link"
+                href="#contact"
+              >
+                Contact Me
+              </a>
+            </li>
+          </ul>
+        </div>
+        <a
+          href="#top"
+          aria-label="back to top"
+          class="back-to-top w-[48px] h-[48px] rounded-md bg-yellow-500 text-lightGold font-semibold fixed bottom-2 right-4 flex justify-center items-center text-[1.5rem] z-40"
+          >&uArr;</a
+        >
+      </nav>
+    </div>
+    <figure class="w-full h-[500px]">
+      <img
+        loading="lazy"
+        class="w-full h-full object-cover rounded-md"
+        src="https://images.unsplash.com/photo-1436367050586-7c605120bf73?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1439&q=80"
+        alt="man holding coffee"
+      />
+    </figure>
+    <section
+      class="py-16 px-10 text-gold flex flex-col gap-6 items-center section transition-all duration-1000"
+      id="men-with-manners"
+    >
+      <h2 class="font-bold text-[2.5rem] text-center">Men With Manners</h2>
+      <div class="flex flex-col gap-4">
+        <p>
+          Researches and psychologists have all agreed that there is musicality
+          crisis in many different contexts within the society. The gender
+          balance is no-longer balancing especially in the third world
+          countries, men are being left out and female headed households are
+          increase by day. Continuous negative portrayal of men in the media,
+          along with the feminization of men and loss of fatherhood in society,
+          has caused confusion and frustration in younger generation males as
+          they do not have a specific role model and are less able to define
+          their role in society. According to some sociologists, some men are
+          experiencing a crisis of identity where they are struggling with the
+          professional and personal demands placed on them in society.
+        </p>
+        <p>
+          Changes to traditional roles, such as the man being the main
+          breadwinner in the family and playing pivotal roles in the workplace
+          it is argued have led to a &#39;crisis of masculinity&#39;. Some
+          social commentators point to the alarming figures for male suicide as
+          one result of this crisis. Another relatively recent concept in the
+          area of masculinity and identity is the idea of the &#39;new man&#39;.
+          This refers to men who work but also help in the house with childcare
+          and housework.
+        </p>
+        <p>
+          Some would argue that our society is rapidly becoming a fatherless
+          society, or perhaps more accurately, an absentee father society. The
+          importance and influence of fathers in families has been in
+          significant decline since the Industrial Revolution and is now
+          reaching critical proportions. The near-total absence of male role
+          models has ripped a hole the size of half the population in many urban
+          areas. Across time and cultures, fathers have always been considered
+          essential—and not just for their sperm. Indeed, no known society ever
+          thought of fathers as potentially unnecessary. Marriage and the
+          nuclear family—mother, father, and children—are the most universal
+          social institutions in existence. In no society has the birth of
+          children out of wedlock been the cultural norm. To the contrary,
+          concern for the legitimacy of children is nearly universal.
+        </p>
+      </div>
+
+      <div>
+        <div class="px-14">
+          <div
+            class="grid gap-3 mt-8 items-center md:grid-cols-2 grid-cols-1 md:gap-x-6 mb-8"
+          >
+            <figure>
+              <img
+                loading="lazy"
+                src="https://images.unsplash.com/photo-1491336477066-31156b5e4f35?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="classy man"
+                class="w-full min-h-[410px] rounded-md object-cover"
+              />
+            </figure>
+
+            <div class="mb-5 md:mb-0">
+              <h3 class="font-bold text-[1.6rem] text-center md:text-start">
+                vision
+              </h3>
+              <p>
+                The overarching vision aims to foster a contemporary and
+                forward-thinking society, wherein men serve as commendable role
+                models distinguished by their virtuous character and unwavering
+                commitment to integrity. This vision aspires to cultivate a
+                cultural ethos that not only values progress and modernity but
+                also places a premium on the embodiment of ethical principles,
+                creating a community where individuals consistently uphold the
+                highest standards of conduct and contribute to the collective
+                betterment of society.
+              </p>
+            </div>
+          </div>
+          <div
+            class="grid gap-3 items-center md:grid-cols-2 grid-cols-1 md:gap-x-12 mb-8"
+          >
+            <div class="order-1 md:order-[-1]">
+              <h3 class="font-bold text-[1.6rem] text-center md:text-start">
+                Mission
+              </h3>
+              <ul class="list-disc">
+                <li>Turning boys into responsible men through mentorship</li>
+                <li>Turning men into responsible fathers through training</li>
+                <li>
+                  Turning wounds of men and boys into health wisdom to be shared
+                </li>
+              </ul>
+            </div>
+            <figure class="md:order-1 order-[-1]">
+              <img
+                loading="lazy"
+                src="https://images.unsplash.com/photo-1529339820129-7d2dd71796ad?q=80&w=1366&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="classy man"
+                class="w-full h-full rounded-md"
+              />
+            </figure>
+          </div>
+        </div>
+      </div>
+      <div class="w-full flex flex-col justify-center items-center">
+        <h3 class="font-bold text-[1.6rem]">Our Services</h3>
+        <ul
+          class="flex flex-col justify-center md:mx-40 text-[1.1rem] font-semibold list-disc"
+        >
+          <li>Counseling of broken and wounded boys and men</li>
+          <li>Mentoring programmes, one on one and also groups</li>
+          <li>
+            Team Building Training for men and boys in schools, companies,
+            churches and communities to live a balanced life, emotionally,
+            psychologically, mentally, sexually, verbally and spiritually.
+          </li>
+          <li>
+            We do have tailor-made services that fitting for each person,
+            organization and problem.
+          </li>
+        </ul>
+      </div>
+      <div class="mt-3 flex flex-col">
+        <p class="text-gold font-bold text-[1.5rem]">Contact Us Now!</p>
+        <a href="tel:+264814063967" class="text-gold text-[1.2rem]"
+          >Phone: <span class="underline">+264 81 406 3967</span></a
+        >
+        <a
+          href="mailto:thepowerofpurposeafrica@gmail.com"
+          class="text-gold text-[1.2rem]"
+        >
+          Email:
+          <span class="underline">thepowerofpurposeafrica@gmail.com</span></a
+        >
+      </div>
+    </section>
+    <footer
+      id="contact"
+      class="bg-gold py-8 px-14 flex justify-between flex-wrap md:flex-nowrap"
+    >
+      <div class="w-full flex justify-center md:w-auto">
+        <a href="index.html"
+          ><img
+            class="max-w-[100px]"
+            src="images/logo.png"
+            alt="logo"
+            loading="lazy"
+        /></a>
+      </div>
+      <div
+        class="flex flex-col justify-center mt-8 md:mt-0 w-full md:w-auto bg"
+      >
+        <a
+          href="tel:+26481406967"
+          class="text-lightGold underline text-[1.1rem] text-center"
+        >
+          Phone: +264 81 406 3967
+        </a>
+        <a
+          href="mailto:thepowerofpurposeafrica@gmail.com"
+          class="text-lightGold underline text-[1.1rem] text-center"
+        >
+          Email: thepowerofpurposeafrica@gmail.com
+        </a>
+      </div>
+      <div class="flex items-center flex-col justify-center gap-5">
+        <div class="flex mt-8 md:mt-0 justify-center md:w-auto flex-col gap-4">
+          <h2 class="text-[1.2rem] text-lightGold">Personal Socials</h2>
+          <ul class="h-full items-center flex gap-4">
+            <li class="hover:translate-y-[-6px]">
+              <a href="https://www.instagram.com/anthonynm7/" target="_blank"
+                ><img src="images/instagram.svg" alt="instagram"
+              /></a>
+            </li>
+            <li class="hover:translate-y-[-6px]">
+              <a href="https://www.facebook.com/anthony.ngabwe" target="_blank"
+                ><img src="images/facebook.svg" alt="facebook"
+              /></a>
+            </li>
+            <li class="hover:translate-y-[-6px]">
+              <a href="https://www.youtube.com/@AnthonyNgabwe" target="_blank"
+                ><img src="images/youtube.svg" alt="youtube"
+              /></a>
+            </li>
+          </ul>
+        </div>
+        <div class="flex mt-8 md:mt-0 justify-center md:w-auto flex-col gap-4">
+          <h2 class="text-[1.2rem] text-lightGold">Company Socials</h2>
+          <ul class="h-full items-center flex gap-4">
+            <li class="hover:translate-y-[-6px]">
+              <a
+                href="https://www.youtube.com/@thepowerofpurposeafrica3553"
+                target="_blank"
+                ><img src="images/youtube.svg" alt="youtube"
+              /></a>
+            </li>
+            <li class="hover:translate-y-[-6px]">
+              <a href="https://www.instagram.com/anthonynm7/" target="_blank"
+                ><img src="images/instagram.svg" alt="instagram"
+              /></a>
+            </li>
+            <li class="hover:translate-y-[-6px]">
+              <a href="https://www.facebook.com/thepurpose7" target="_blank"
+                ><img src="images/facebook.svg" alt="facebook"
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <div class="bg-gold border-t-2 px-14 py-1">
+      <p class="text-lightGold text-center">Made and Designed by Caleb Odo</p>
+    </div>
+    <script src="src/js/nav.js"></script>
+  </body>
+</html>

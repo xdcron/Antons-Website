@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wonder Women</title>
+    <link rel="stylesheet" href="dist/output.css" />
+    <link rel="stylesheet" href="dist/style.css" />
+    <link rel="icon" href="images/logo.png" type="image/png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800;900&family=Poppins:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="sticky top-0 bg-gold pb-[0.3rem] z-10">
+      <div
+        class="w-full px-14 bg-gold pt-1 flex justify-center items-center gap-3"
+      >
+        <a target="_blank" href="https://www.facebook.com/thepurpose7">
+          <img src="images/facebook.svg" alt="facebook" />
+        </a>
+        <a
+          target="_blank"
+          href="https://www.youtube.com/results?search_query=the+power+of+purpose+africa"
+        >
+          <img src="images/youtube.svg" alt="facebook" />
+        </a>
+        <a target="_blank" href="https://www.instagram.com/anthonynm7/">
+          <img src="images/instagram.svg" alt="facebook" />
+        </a>
+        <div class="pt-1 flex gap-2">
+          <a
+            href="tel:+264814063967"
+            class="text-lightGold text-[0.6rem] md:text-[0.9rem]"
+            >Phone: <span class="underline">+264 81 406 3967</span></a
+          >
+          <a
+            href="mailto:thepowerofpurposeafrica@gmail.com"
+            class="text-lightGold text-[0.6rem] md:text-[0.9rem]"
+          >
+            Email:
+            <span class="underline">thepowerofpurposeafrica@gmail.com</span></a
+          >
+        </div>
+      </div>
+      <nav id="nav" class="md:flex md:justify-between md:items-center px-8">
+        <div class="mx-4 flex items-center justify-between">
+          <div>
+            <a href="index.html"
+              ><img
+                class="h-16 inline cursor-pointer"
+                src="images/logo.png"
+                alt="logo"
+            /></a>
+          </div>
+          <div>
+            <p
+              class="uppercase text-lightGold text-[1.3rem] font-bold md:ml-3 mr-4"
+            >
+              The Power of Purpose Africa
+            </p>
+          </div>
+          <span
+            id="menu"
+            class="z-10 md:hidden cursor-pointer hover:translate-y-[-5px] transition-all ease-in duration-100"
+          >
+            <span class="sr-only">Open main menu</span>
+            <svg
+              class="w-6 h-6"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 17 14"
+            >
+              <path
+                stroke="#F9F18F"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M1 1h15M1 7h15M1 13h15"
+              />
+            </svg>
+          </span>
+        </div>
+
+        <div
+          id="nav-list"
+          class="md:flex w-[50%] sm:right-0 font-[600] text-gold md:text-[1.2rem] z-[5] md:z-auto md:static absolute right-0 top-[20px] md:w-auto hidden md:opacity-100 md:translate-x-0"
+        >
+          <span
+            id="close"
+            class="flex justify-end pr-5 cursor-pointer transition-all ease-in duration-100"
+          >
+            <span class="sr-only">close main menu</span>
+            <img class="md:hidden" src="images/x.svg" alt="close icon" />
+          </span>
+          <ul
+            class="bg-gold md:flex w-full sm:right-0 font-[600] text-lightGold md:text-[0.9rem] z-[5] md:z-auto md:static absolute right-0 top-[50px] md:w-auto pr-3 gap-4 md:opacity-100 h-screen md:h-auto"
+          >
+            <li class="my-4 flex justify-center">
+              <a
+                class="hover:text-lightGold hover:translate-y-[-4px] duration-200"
+                href="/"
+                target="_blank"
+              >
+                Home
+              </a>
+            </li>
+            <li class="my-4 flex justify-center">
+              <a
+                class="hover:text-lightGold hover:translate-y-[-4px] duration-200"
+                href="menwithmanners.html"
+                target="_blank"
+              >
+                Men With Manners
+              </a>
+            </li>
+            <li class="my-4 flex justify-center">
+              <a
+                class="hover:text-lightGold hover:translate-y-[-4px] duration-200"
+                href="genderconsulting.html"
+                target="_blank"
+              >
+                Gender Consulting
+              </a>
+            </li>
+
+            <li class="md:relative top-[-10px] my-4 flex justify-center">
+              <a
+                class="bg-lightGold p-2 rounded-md text-gold hover:translate-y-[-4px] hover:bg-yellow-200 transition-all ease-in duration-200 hover:text-yellow-500 nav-link"
+                href="#contact"
+              >
+                Contact Me
+              </a>
+            </li>
+          </ul>
+        </div>
+        <a
+          href="#top"
+          aria-label="back to top"
+          class="back-to-top w-[48px] h-[48px] rounded-md bg-yellow-500 text-lightGold font-semibold fixed bottom-2 right-4 flex justify-center items-center text-[1.5rem] z-40"
+          >&uArr;</a
+        >
+      </nav>
+    </div>
+    <figure class="object-center">
+      <img
+        class="w-full h-[400px] object-cover"
+        src="images/wonderwomenlogo.jpg"
+        alt="wonder women logo"
+      />
+    </figure>
+    <section
+      id="wonder-women"
+      class="py-16 px-14 flex flex-col gap-8 items-center section transition-all duration-1000"
+    >
+      <div class="mb-3">
+        <h2 class="text-gold font-bold text-[2.7rem]">Wonder Women Namibia</h2>
+      </div>
+      <div class="flex flex-col items-center">
+        <h3 class="text-gold font-bold text-[2rem] mb-2">Background</h3>
+        <p class="text-[1.1rem] text-gold font-medium">
+          Wonder Women Charity Organization, an organization that is more driven
+          in helping young girls and women to discover their purpose, passion,
+          identity and self-worthy. This is achieving through training, talk
+          shows, donating clothes, period pads and foods to vulnerable women and
+          girls. And offer psychosocial support and all possible way. The talk
+          was designed to reach larger audience, inspire women through
+          testimonies of other women who have been in their similar situation
+          and came out strong, and whatever is raised through this talk show,
+          goes out to the community to help women and girls.
+        </p>
+      </div>
+      <div
+        class="flex flex-col items-center md:flex-row md:flex md:gap-x-12 mb-8"
+      >
+        <div class="flex justify-center max-w-[600px] md:min-w-[550px] mt-8">
+          <img
+            loading="lazy"
+            src="images/wonderwomen1.jpg"
+            alt="Anthony"
+            class="w-full h-full rounded-md"
+          />
+        </div>
+        <div
+          class="flex flex-col order-[-1] md:order-1 items-center gap-8 justify-center"
+        >
+          <div class="flex flex-col items-center">
+            <h2 class="font-bold text-gold text-[2rem] mb-4">Vision</h2>
+            <p class="text-gold font-semibold text-start">
+              Striving for purpose driven life” to enhance holistic lives of
+              young girls, ladies and women through mentorship, coaching and
+              training. Discovering, Developing and Deploying The power and
+              purpose of woman.
+            </p>
+          </div>
+          <ul class="text-gold flex flex-col items-center list-disc">
+            <h3 class="text-[1.8rem] font-bold">Vision Action Indicators</h3>
+            <li>
+              To educate, encourage and bring people to their realization of
+              their God’s given purpose of their lives.
+            </li>
+            <li>
+              To inform, educate and establish a strong faith in our Namibian
+              People through Community services
+            </li>
+            <li>
+              To be an agent of change in our Era where the world in drowning in
+              social media pressure.
+            </li>
+            <li>
+              To maintain and develop a strong community with strong and right
+              attitude towards our daily lives.
+            </li>
+            <li>
+              To be a mediator or initiate the contribution from anyone willing
+              to help so we can help those that need medical attention as well
+              as those that want to further their studies and they are from
+              disadvantaged background.
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div>
+        <p class="text-gold font-medium text-[1.2rem] text-center">
+          Above all, we just want to bring love, hope and encourage people that
+          through faith all is possible. The world has more people hurting but
+          we are more concerned about our materials things than to be there for
+          each other.
+        </p>
+      </div>
+      <div
+        class="flex flex-col md:flex-row items-center md:flex md:gap-x-9 mb-8"
+      >
+        <div class="flex flex-col items-center">
+          <h2 class="font-bold text-gold text-[2rem] mb-4">Mission</h2>
+          <p class="text-gold font-semibold text-start">
+            To recognize, develop, equip potentials and promote the strength of
+            girls between the age of 10-15, and young adults between the age of
+            15 -30 in life with full reliance on our creator while fulfilling
+            our own purpose in life. Motivate and encourage youths to always
+            pursue on becoming better version of themselves.
+          </p>
+
+          <ul
+            class="text-gold flex flex-col items-start pt-10 pb-8 text-center list-disc"
+          >
+            <li>
+              Create a social media platform/pages, and use blogs, drama, dance,
+              poetry, music in spaces where women and men will engage and
+              discuss issues currently happening in our societies.
+            </li>
+            <li>Training and teaching girls and women on self-value.</li>
+            <li>
+              Encourage women not to give up on their marriages and know that
+              God does not make a mistake when you marry.
+            </li>
+            <li>
+              To assist women, realize their purpose on earth, as well as
+              encouraging others that through faith we can achieve everything we
+              desire in life and that nothing is impossible with GOD.
+            </li>
+            <li>
+              To promote peace and harmony in marriages by hosting successful
+              marriage talk shows, and promote relationship with God in our
+              homes.
+            </li>
+            <li>
+              To mentor young women and men to become responsible citizens of
+              tomorrow.
+            </li>
+            <li>
+              To arrange seminars, trainings, workshops and focus group
+              discussion to educate, encourage one another to identify and focus
+              on our purpose for we are here for a purpose
+            </li>
+            <li>
+              TV shows on real talk with people that are willing to share about
+              their life and teach the young ones what they need to know when
+              faced with certain issues/challenges in their lives.
+            </li>
+          </ul>
+        </div>
+        <div class="flex justify-center max-w-[600px] md:min-w-[600px] mt-8">
+          <img
+            loading="lazy"
+            src="images/wonderwomen2.jpg"
+            alt="Anthony"
+            class="w-full h-full object-cover rounded-md"
+          />
+        </div>
+      </div>
+      <div
+        class="flex flex-col md:flex-row items-center md:flex md:gap-x-9 mb-8"
+      >
+        <div class="flex justify-center max-w-[600px] md:min-w-[600px] mt-8">
+          <img
+            loading="lazy"
+            src="images/wonderwomen3.jpg"
+            alt="Anthony"
+            class="w-full h-full object-cover rounded-md"
+          />
+        </div>
+        <div class="flex flex-col items-center">
+          <ul
+            class="text-gold flex flex-col items-start pt-10 pb-8 text-center list-disc"
+          >
+            <li>
+              Bring hope, healing and encouragement/ motivation through the word
+              of GOD.
+            </li>
+            <li>
+              Documenting life stories of women who have brought positive change
+              in our societies and country at large
+            </li>
+            <li>
+              Invite remarkable people that have survived gender based violence
+              and focused on the future so they give hope/reassurance to others
+              that have experienced it and have lost hope.
+            </li>
+            <li>
+              Formal and informal teaching, knowledge sharing forums to offer
+              support to heal and comfort traumatized women who are affected in
+              various ways, capacity building, spread the impact of education
+              and offer more learning opportunity for the drop out due to
+              teenage pregnancies.
+            </li>
+            <li>
+              Educate young girls on hygiene and Sanitation, empowerment-life
+              skills e.g handicraft/tailoring and marketing, décor and catering
+              as well as beauty products.
+            </li>
+            <li>
+              Humanitarian Assistance in terms of relief, food distribution and
+              expensive treatment process.
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div
+        class="text-gold flex flex-col gap-6 items-center section transition-all duration-1000"
+        id="men-with-manners"
+      >
+        <figure class="w-full h-[550px]">
+          <img
+            loading="lazy"
+            class="w-full h-full object-cover rounded-md"
+            src="images/wonderwomentalk.jpg"
+            alt="women talking"
+          />
+        </figure>
+        <h2 class="font-bold text-[2.5rem] text-center">Our Talk Show</h2>
+        <ul class="flex flex-col gap-4 list-disc">
+          <h2 class="text-[2rem] font-bold">Aim of Our Talk show</h2>
+          <li>
+            Transforming young girls and women through hosting guest who have
+            gone through the darkest moments and came out shining as stars.
+            Using and sharing their stories on this platform to give hope and
+            inspiration to young and old women who feel hopeless about life and
+            their situation.
+          </li>
+          <li>
+            To bring closer and create an open platform where real life
+            experiences, skills and knowledge and be shared, there is a battle
+            of hierarchy and gender inequality affecting many women in our
+            society and this will be a platform to get skills and learn from
+            others women how to excel in such a society.
+          </li>
+          <li>
+            To reach a larger audience and impact more lives, because television
+            can reach a wider range of people in all from classes, tribe and
+            religion
+          </li>
+          <li>
+            Introduce the talk show to the Namibian and African audience, to
+            tell the Namibia story and share experience that resonate with
+            Namibians and Africans. To educate, inspire, motivate and share love
+            and laughter with our audience.
+          </li>
+          <li>
+            Namibia at the moment has no TV talk show that is exclusively
+            targeted at young girls and women empowerment, we do have several
+            shows in the country but mainly mixed, and none that exclusively
+            addresses women issues.
+          </li>
+          <li>
+            Namibia at the moment has no TV talk show that is exclusively
+            targeted at young girls and women empowerment, we do have several
+            shows in the country but mainly mixed, and none that exclusively
+            addresses women issues.
+          </li>
+        </ul>
+      </div>
+      <div
+        class="py-6 text-gold flex flex-col gap-6 items-center section transition-all duration-1000"
+        id="men-with-manners"
+      >
+        <h2 class="font-bold text-[2.5rem] text-center">
+          Spiritual Value and Foundation
+        </h2>
+        <p>
+          Proverbs 31: 10-30 – who can find a virtuous woman, for her worth is
+          far above rubies, she is like the merchant ships, brings foods from
+          far, she rises also while is it yet night, and provides food for a
+          household. She considers a field and buys it. She stands up for the
+          poor and the needy.
+        </p>
+        <p>
+          Titus 2:4-5, The older women likewise, that they be reverent in
+          behaviour, not slanders, not given to much wine, teachers of good
+          things, that they should admonish the young women to love their
+          husbands, to love their children, to be discreet , chaste,
+          home-makers, good, obedient to their own husbands, that the word of
+          God may not be blasphemed.
+        </p>
+        <ul class="flex flex-col gap-4 list-disc">
+          <li>
+            Over the years, I have observed the diminishing of values among
+            young girls and young adults in our society.
+          </li>
+          <li>
+            Our young people are pressured to conform to the societal trends,
+            not knowing who they are in Christ.
+          </li>
+          <li>
+            Money, sex, alcoholism, fame and social status seems to be the
+            center of life for majority of young people.
+          </li>
+          <li>
+            The valuing of marriage and fear of God is slowly fading off, people
+            claiming to be educated and civilized while living borrowed western
+            lifestyle.
+          </li>
+          <li>
+            Push or encourage others to reach their full potential, evaluate
+            within themselves to reach their God’s given potential/purpose.
+          </li>
+          <li>
+            Wonder Women is to encourage people to step out in faith so we allow
+            God to step in.
+          </li>
+          <li>Be a mother figure to orphans and those with absent mother</li>
+        </ul>
+        <q>The world has so many hurting people, I choose to give love</q>
+      </div>
+      <div
+        class="text-gold flex flex-col gap-6 items-center section transition-all duration-1000"
+        id="men-with-manners"
+      >
+        <h2 class="font-bold text-[2.5rem] text-center">Who is Benefiting?</h2>
+        <p>
+          The society at large, educate a girl and it benefit the nation. An
+          African proverb said, It take a village to raise a child. We can shape
+          our future and make Namibia a better country if we invest in our young
+          generation and equip them with the right knowledge for knowledge is
+          power.
+        </p>
+
+        <div
+          class="flex md:flex-row flex-col gap-7 justify-center items-center w-full"
+        >
+          <ul class="flex flex-col gap-4 list-disc">
+            <li>Vulnerable Women and Girls</li>
+            <li>Girls from poor houses</li>
+            <li>Abused women and girls</li>
+            <li>Drug and Alcohols addicts</li>
+            <li>Cancer and HIV patients (women and girls)</li>
+          </ul>
+          <figure class="max-w-[500px] max-h-[400px]">
+            <img
+              src="images/vunerable.jpg"
+              alt="sad lady"
+              class="w-full h-full object-cover rounded-md"
+            />
+          </figure>
+        </div>
+        <q>The world has so many hurting people, I choose to give love</q>
+      </div>
+      <div
+        class="flex flex-col md:flex-row items-center md:flex md:gap-x-9 mb-8"
+      >
+        <div class="flex flex-col items-center text-gold">
+          <h2 class="font-bold text-[2rem] mb-4">Services</h2>
+
+          <ul class="flex flex-col items-start pt-10 pb-8 list-disc">
+            <li>
+              <span class="font-bold">Talk Shows</span> – Female Founder Friday-
+              Women that have established something to make a difference in our
+              society.
+            </li>
+            <li>
+              <span class="font-bold">Seminars</span> – Together with my husband
+              that choose to be a father figure to those with absent fathers and
+              with our challenges in our marriage, to educate and encourage the
+              nation to live for God.
+            </li>
+            <li>
+              <span class="font-bold">Social Media Platforms</span> – The power
+              of Purpose and Wonder Women
+            </li>
+            <li>
+              <span class="font-bold"
+                >Charity events for marginalized societies</span
+              >
+              – With the little that God has blessed us, Wonder Women through
+              House of Prayer Restoration church will hold charity events to
+              give to the marginalized children.
+            </li>
+            <li>
+              <span class="font-bold">Counselling</span> – Husband offers
+              personal and marriage counseling
+            </li>
+            <li>
+              <span class="font-bold">Mentorship</span> – We decide to be an
+              example to the younger generation
+            </li>
+            <li>
+              <span class="font-bold">Conferences</span> – Social gatherings,
+              women/girls
+            </li>
+            <li>
+              <span class="font-bold"
+                >Marriage retreats and Marriage seminars</span
+              >
+              – 2 times a year.
+            </li>
+            <li>Singles Retreats and Seminars</li>
+          </ul>
+        </div>
+
+        <div class="flex justify-center max-w-[600px] md:min-w-[600px] mt-8">
+          <img
+            loading="lazy"
+            src="images/wonderwomen4.jpg"
+            alt="Wonder Women"
+            class="w-full h-full object-cover rounded-md"
+          />
+        </div>
+      </div>
+      <div class="text-gold flex flex-col text-center items-center">
+        <q
+          >Us women need to discover our purpose in life for two reasons. First,
+          fulfilling our purpose gives glory to God. Second, it releases us from
+          the captivity of hopelessness and despair.</q
+        >
+        <q
+          >You’ve got to follow your passion. You’ve got to figure out what it
+          is you love-who you really are. And have the courage to do that. I
+          believe that the only courage anybody ever needs is the courage to
+          follow your own dream. Oprah Winfrey</q
+        >
+      </div>
+      <div class="flex flex-wrap justify-center md:flex-nowrap gap-8">
+        <div class="flex flex-col justify-center mb-5">
+          <p class="text-gold font-medium text-[1.1rem]">
+            Women Pursuing their purpose
+          </p>
+          <p class="text-gold font-medium text-[1.1rem]">
+            While there's nothing wrong with feeling broken at times, remember
+            not to linger there for too long. View your past experiences as
+            lessons, not life sentences. Rise each time you fall, and once
+            you've overcome, stand strong. Don't allow anyone to bring you back
+            to a place from which you've already prayed your way out.
+          </p>
+        </div>
+        <img
+          class="max-w-[500px] min-w-[300px] rounded-lg"
+          src="images/wonder-women.jpg"
+          alt="wonder women"
+          loading="lazy"
+        />
+      </div>
+      <div class="flex flex-wrap justify-center md:flex-nowrap gap-8">
+        <div class="w-[280px] md:w-[600px]">
+          <img
+            class="w-full rounded-md"
+            src="images/wonder-2.jpg"
+            alt="wonder women"
+          />
+        </div>
+        <div class="flex flex-col justify-center mb-5">
+          <p class="text-gold font-medium text-[1.1rem]">
+            We cannot become what we want by remaining what we are. Do NOT
+            disappoint the future you by doing exactly the same things that keep
+            you in bondage. You are capable of being the best you can. You are a
+            powerful human being, don’t ever doubt that
+          </p>
+        </div>
+      </div>
+
+      <div class="w-full flex flex-col items-center">
+        <h3 class="text-gold text-[1.8rem] font-semibold mb-4">
+          Visit Our Socials
+        </h3>
+        <div class="flex gap-5">
+          <a
+            target="_blank"
+            class="hover:translate-y-[-5px]"
+            href="https://www.facebook.com/profile.php?id=100064737277460"
+            ><img src="images/facebook-light.svg" loading="lazy" alt="facebook"
+          /></a>
+          <a
+            target="_blank"
+            class="hover:translate-y-[-5px]"
+            href="https://www.youtube.com/@wonderwomen8189"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="36"
+              height="36"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="#9E6C16"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="feather feather-youtube"
+            >
+              <path
+                d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"
+              ></path>
+              <polygon
+                points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"
+              ></polygon>
+            </svg>
+          </a>
+          <a
+            target="_blank"
+            class="hover:translate-y-[-5px]"
+            href="https://www.instagram.com/wonderwomen_namibia/"
+            ><img
+              src="images/instagram-light.svg"
+              loading="lazy"
+              alt="instagram"
+          /></a>
+        </div>
+      </div>
+    </section>
+    <footer
+      id="contact"
+      class="bg-gold py-8 px-14 flex justify-between flex-wrap md:flex-nowrap"
+    >
+      <div class="w-full flex justify-center md:w-auto">
+        <a href="index.html"
+          ><img
+            class="max-w-[100px]"
+            src="images/logo.png"
+            alt="logo"
+            loading="lazy"
+        /></a>
+      </div>
+      <div
+        class="flex flex-col justify-center mt-8 md:mt-0 w-full md:w-auto bg"
+      >
+        <a
+          href="tel:+26481406967"
+          class="text-lightGold underline text-[1.1rem] text-center"
+        >
+          Phone: +264 81 406 3967
+        </a>
+        <a
+          href="mailto:thepowerofpurposeafrica@gmail.com"
+          class="text-lightGold underline text-[1.1rem] text-center"
+        >
+          Email: thepowerofpurposeafrica@gmail.com
+        </a>
+      </div>
+      <div class="flex items-center flex-col justify-center gap-5">
+        <div class="flex mt-8 md:mt-0 justify-center md:w-auto flex-col gap-4">
+          <h2 class="text-[1.2rem] text-lightGold">Personal Socials</h2>
+          <ul class="h-full items-center flex gap-4">
+            <li class="hover:translate-y-[-6px]">
+              <a href="https://www.instagram.com/anthonynm7/" target="_blank"
+                ><img src="images/instagram.svg" alt="instagram"
+              /></a>
+            </li>
+            <li class="hover:translate-y-[-6px]">
+              <a href="https://www.facebook.com/anthony.ngabwe" target="_blank"
+                ><img src="images/facebook.svg" alt="facebook"
+              /></a>
+            </li>
+            <li class="hover:translate-y-[-6px]">
+              <a href="https://www.youtube.com/@AnthonyNgabwe" target="_blank"
+                ><img src="images/youtube.svg" alt="youtube"
+              /></a>
+            </li>
+          </ul>
+        </div>
+        <div class="flex mt-8 md:mt-0 justify-center md:w-auto flex-col gap-4">
+          <h2 class="text-[1.2rem] text-lightGold">Company Socials</h2>
+          <ul class="h-full items-center flex gap-4">
+            <li class="hover:translate-y-[-6px]">
+              <a
+                href="https://www.youtube.com/@thepowerofpurposeafrica3553"
+                target="_blank"
+                ><img src="images/youtube.svg" alt="youtube"
+              /></a>
+            </li>
+            <li class="hover:translate-y-[-6px]">
+              <a href="https://www.instagram.com/anthonynm7/" target="_blank"
+                ><img src="images/instagram.svg" alt="instagram"
+              /></a>
+            </li>
+            <li class="hover:translate-y-[-6px]">
+              <a href="https://www.facebook.com/thepurpose7" target="_blank"
+                ><img src="images/facebook.svg" alt="facebook"
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="src/js/nav.js"></script>
+  </body>
+</html>

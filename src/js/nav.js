@@ -21,12 +21,17 @@ closeMenu.addEventListener("click", () => {
     mobileNav.classList.add("hidden");
   }, 400);
 });
+function scrollIntoView(parent, target) {
+  document.getElementById(parent).addEventListener("click", function (e) {
+    console.log(e.target.classList.contains(target));
+    if (!e.target.classList.contains(target)) return;
+    e.preventDefault();
+    // MATCHING STRATEGY
 
-nav__links.addEventListener("click", function (e) {
-  e.preventDefault();
-  // MATCHING STRATEGY
-  if (e.target.classList.contains("nav-link")) {
-    const id = e.target.getAttribute("href");
-    document.querySelector(id).scrollIntoView({ behavior: "smooth" });
-  }
-});
+    if (e.target.classList.contains(target)) {
+      const id = e.target.getAttribute("href");
+      document.querySelector(id).scrollIntoView({ behavior: "smooth" });
+    }
+  });
+}
+scrollIntoView("nav-list", "nav-link");
