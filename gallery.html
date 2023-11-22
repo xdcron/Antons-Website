@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gallery</title>
+    <link rel="stylesheet" href="dist/output.css" />
+    <link rel="stylesheet" href="dist/style.css" />
+    <link rel="icon" href="images/logo.png" type="image/png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800;900&family=Poppins:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="./src/js/gallery.js" defer></script>
+  </head>
+  <body>
+    <div class="sticky top-0 bg-gold pb-[0.3rem] z-10">
+      <div
+        class="w-full px-14 bg-gold pt-1 flex justify-center items-center gap-3"
+      >
+        <a target="_blank" href="https://www.facebook.com/thepurpose7">
+          <img src="images/facebook.svg" alt="facebook" />
+        </a>
+        <a
+          target="_blank"
+          href="https://www.youtube.com/results?search_query=the+power+of+purpose+africa"
+        >
+          <img src="images/youtube.svg" alt="facebook" />
+        </a>
+        <a target="_blank" href="https://www.instagram.com/anthonynm7/">
+          <img src="images/instagram.svg" alt="facebook" />
+        </a>
+        <div class="pt-1 flex gap-2">
+          <a
+            href="tel:+264814063967"
+            class="text-lightGold text-[0.6rem] md:text-[0.9rem]"
+            >Phone: <span class="underline">+264 81 406 3967</span></a
+          >
+          <a
+            href="mailto:thepowerofpurposeafrica@gmail.com"
+            class="text-lightGold text-[0.6rem] md:text-[0.9rem]"
+          >
+            Email:
+            <span class="underline">thepowerofpurposeafrica@gmail.com</span></a
+          >
+        </div>
+      </div>
+      <nav id="nav" class="md:flex md:justify-between md:items-center px-8">
+        <div class="mx-4 flex items-center justify-between">
+          <div>
+            <a href="index.html"
+              ><img
+                class="h-16 inline cursor-pointer"
+                src="images/logo.png"
+                alt="logo"
+            /></a>
+          </div>
+          <div>
+            <p
+              class="uppercase text-lightGold text-[1.3rem] font-bold md:ml-3 mr-4"
+            >
+              The Power of Purpose Africa
+            </p>
+          </div>
+          <span
+            id="menu"
+            class="z-10 md:hidden cursor-pointer hover:translate-y-[-5px] transition-all ease-in duration-100"
+          >
+            <span class="sr-only">Open main menu</span>
+            <svg
+              class="w-6 h-6"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 17 14"
+            >
+              <path
+                stroke="#F9F18F"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M1 1h15M1 7h15M1 13h15"
+              />
+            </svg>
+          </span>
+        </div>
+
+        <div
+          id="nav-list"
+          class="md:flex w-[50%] sm:right-0 font-[600] text-gold md:text-[1.2rem] z-[5] md:z-auto md:static absolute right-0 top-[20px] md:w-auto hidden md:opacity-100 md:translate-x-0"
+        >
+          <span
+            id="close"
+            class="flex justify-end pr-5 cursor-pointer transition-all ease-in duration-100"
+          >
+            <span class="sr-only">close main menu</span>
+            <img class="md:hidden" src="images/x.svg" alt="close icon" />
+          </span>
+          <ul
+            class="bg-gold md:flex w-full sm:right-0 font-[600] text-lightGold md:text-[0.9rem] z-[5] md:z-auto md:static absolute right-0 top-[50px] md:w-auto pr-3 gap-4 md:opacity-100 h-screen md:h-auto"
+          >
+            <li class="my-4 flex justify-center">
+              <a
+                class="hover:text-lightGold hover:translate-y-[-4px] duration-200"
+                href="/"
+                target="_blank"
+              >
+                Home
+              </a>
+            </li>
+            <li class="my-4 flex justify-center">
+              <a
+                class="hover:text-lightGold hover:translate-y-[-4px] duration-200"
+                href="menwithmanners.html"
+                target="_blank"
+              >
+                Men With Manners
+              </a>
+            </li>
+            <li class="my-4 flex justify-center">
+              <a
+                class="hover:text-lightGold hover:translate-y-[-4px] duration-200"
+                href="wonderwomen.html"
+                target="_blank"
+              >
+                Wonder Women
+              </a>
+            </li>
+            <li class="my-4 flex justify-center">
+              <a
+                class="hover:text-lightGold hover:translate-y-[-4px] duration-200"
+                href="genderconsulting.html"
+                target="_blank"
+              >
+                Gender Consulting
+              </a>
+            </li>
+            <li class="md:relative top-[-10px] my-4 flex justify-center">
+              <a
+                class="bg-lightGold p-2 rounded-md text-gold hover:translate-y-[-4px] hover:bg-yellow-200 transition-all ease-in duration-200 hover:text-yellow-500 nav-link"
+                href="#contact"
+              >
+                Contact Me
+              </a>
+            </li>
+          </ul>
+        </div>
+        <a
+          href="#top"
+          aria-label="back to top"
+          class="back-to-top w-[48px] h-[48px] rounded-md bg-yellow-500 text-lightGold font-semibold fixed bottom-2 right-4 flex justify-center items-center text-[1.5rem] z-40"
+          >&uArr;</a
+        >
+      </nav>
+    </div>
+    <figure class="object-center">
+      <img
+        class="w-full h-[400px] object-cover"
+        src="https://images.unsplash.com/photo-1606819717115-9159c900370b?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        alt="gender presentation"
+      />
+    </figure>
+    <main class="px-6 py-8 grid place-content-center">
+      <h1 class="text-[1.8rem] font-bold text-gold text-center my-6">
+        Gallery
+      </h1>
+      <div
+        class="grid md:grid-cols-4 sm:grid-cols-2 gap-5 grid-cols-1 place-content-center gallery-container"
+      >
+        <div
+          class="hover:brightness-50 transition-all duration-200 hover:translate-y-[-5px]"
+        >
+          <figure>
+            <img
+              src="images/galler images/image-1.jpg"
+              class="w-[250px] h-[250px] gallery-item object-cover cursor-pointer rounded-md"
+              alt=""
+              loading="lazy"
+            />
+          </figure>
+        </div>
+        <div
+          class="hover:brightness-50 transition-all duration-200 hover:translate-y-[-5px]"
+        >
+          <figure>
+            <img
+              src="images/galler images/image-2.jpg"
+              class="w-[250px] h-[250px] gallery-item object-cover cursor-pointer rounded-md"
+              alt=""
+              loading="lazy"
+            />
+          </figure>
+        </div>
+        <div
+          class="hover:brightness-50 transition-all duration-200 hover:translate-y-[-5px]"
+        >
+          <figure>
+            <img
+              src="images/galler images/image-3.jpg"
+              class="w-[250px] h-[250px] gallery-item object-cover cursor-pointer rounded-md"
+              alt=""
+              loading="lazy"
+            />
+          </figure>
+        </div>
+        <div
+          class="hover:brightness-50 transition-all duration-200 hover:translate-y-[-5px]"
+        >
+          <figure>
+            <img
+              src="images/galler images/image-4.jpg"
+              class="w-[250px] h-[250px] gallery-item object-cover cursor-pointer rounded-md"
+              alt=""
+              loading="lazy"
+            />
+          </figure>
+        </div>
+        <div
+          class="hover:brightness-50 transition-all duration-200 hover:translate-y-[-5px]"
+        >
+          <figure>
+            <img
+              src="images/galler images/image-5.jpg"
+              class="w-[250px] h-[250px] gallery-item object-cover cursor-pointer rounded-md"
+              alt=""
+              loading="lazy"
+            />
+          </figure>
+        </div>
+        <div
+          class="hover:brightness-50 transition-all duration-200 hover:translate-y-[-5px]"
+        >
+          <figure>
+            <img
+              src="images/galler images/image-6.jpg"
+              class="w-[250px] h-[250px] gallery-item object-cover cursor-pointer rounded-md"
+              alt=""
+              loading="lazy"
+            />
+          </figure>
+        </div>
+        <div
+          class="hover:brightness-50 transition-all duration-200 hover:translate-y-[-5px]"
+        >
+          <figure>
+            <img
+              src="images/galler images/image-7.jpg"
+              class="w-[250px] h-[250px] gallery-item object-cover cursor-pointer rounded-md"
+              alt=""
+              loading="lazy"
+            />
+          </figure>
+        </div>
+        <div
+          class="hover:brightness-50 transition-all duration-200 hover:translate-y-[-5px]"
+        >
+          <figure>
+            <img
+              src="images/galler images/image-8.jpg"
+              class="w-[250px] h-[250px] gallery-item object-cover cursor-pointer rounded-md"
+              alt=""
+              loading="lazy"
+            />
+          </figure>
+        </div>
+        <div
+          class="hover:brightness-50 transition-all duration-200 hover:translate-y-[-5px]"
+        >
+          <figure>
+            <img
+              src="images/galler images/image-9.jpg"
+              class="w-[250px] h-[250px] gallery-item object-cover cursor-pointer rounded-md"
+              alt=""
+              loading="lazy"
+            />
+          </figure>
+        </div>
+        <div
+          class="hover:brightness-50 transition-all duration-200 hover:translate-y-[-5px]"
+        >
+          <figure>
+            <img
+              src="images/galler images/image-10.jpg"
+              class="w-[250px] h-[250px] gallery-item object-cover cursor-pointer rounded-md"
+              alt=""
+              loading="lazy"
+            />
+          </figure>
+        </div>
+        <div
+          class="hover:brightness-50 transition-all duration-200 hover:translate-y-[-5px]"
+        >
+          <figure>
+            <img
+              src="images/galler images/image-11.jpg"
+              class="w-[250px] h-[250px] gallery-item object-cover cursor-pointer rounded-md"
+              alt=""
+              loading="lazy"
+            />
+          </figure>
+        </div>
+        <div
+          class="hover:brightness-50 transition-all duration-200 hover:translate-y-[-5px]"
+        >
+          <figure>
+            <img
+              src="images/galler images/image-12.jpg"
+              class="w-[250px] h-[250px] gallery-item object-cover cursor-pointer rounded-md"
+              alt=""
+              loading="lazy"
+            />
+          </figure>
+        </div>
+        <div
+          class="hover:brightness-50 transition-all duration-200 hover:translate-y-[-5px]"
+        >
+          <figure>
+            <img
+              src="images/galler images/image-13.JPG"
+              class="w-[250px] h-[250px] gallery-item object-cover cursor-pointer rounded-md"
+              alt=""
+              loading="lazy"
+            />
+          </figure>
+        </div>
+        <div
+          class="hover:brightness-50 transition-all duration-200 hover:translate-y-[-5px]"
+        >
+          <figure>
+            <img
+              src="images/galler images/image-14.png"
+              class="w-[250px] h-[250px] gallery-item object-cover cursor-pointer rounded-md"
+              alt=""
+              loading="lazy"
+            />
+          </figure>
+        </div>
+        <div
+          class="hover:brightness-50 transition-all duration-200 hover:translate-y-[-5px]"
+        >
+          <figure>
+            <img
+              src="images/galler images/image-15.png"
+              class="w-[250px] h-[250px] gallery-item object-cover cursor-pointer rounded-md"
+              alt=""
+              loading="lazy"
+            />
+          </figure>
+        </div>
+        <div
+          class="hover:brightness-50 transition-all duration-200 hover:translate-y-[-5px]"
+        >
+          <figure>
+            <img
+              src="images/galler images/image-16.png"
+              class="w-[250px] h-[250px] gallery-item object-cover cursor-pointer rounded-md"
+              alt=""
+              loading="lazy"
+            />
+          </figure>
+        </div>
+        <div
+          class="hover:brightness-50 transition-all duration-200 hover:translate-y-[-5px]"
+        >
+          <figure>
+            <img
+              src="images/galler images/image-17.png"
+              class="w-[250px] h-[250px] gallery-item object-cover cursor-pointer rounded-md"
+              alt=""
+              loading="lazy"
+            />
+          </figure>
+        </div>
+        <div
+          class="hover:brightness-50 transition-all duration-200 hover:translate-y-[-5px]"
+        >
+          <figure>
+            <img
+              src="images/galler images/image-18.png"
+              class="w-[250px] h-[250px] gallery-item object-cover cursor-pointer rounded-md"
+              alt=""
+              loading="lazy"
+            />
+          </figure>
+        </div>
+        <div
+          class="hover:brightness-50 transition-all duration-200 hover:translate-y-[-5px]"
+        >
+          <figure>
+            <img
+              src="images/galler images/image-19.png"
+              class="w-[250px] h-[250px] gallery-item object-cover cursor-pointer rounded-md"
+              alt=""
+              loading="lazy"
+            />
+          </figure>
+        </div>
+        <div
+          class="hover:brightness-50 transition-all duration-200 hover:translate-y-[-5px]"
+        >
+          <figure>
+            <img
+              src="images/galler images/image-20.png"
+              class="w-[250px] h-[250px] gallery-item object-cover cursor-pointer rounded-md"
+              alt=""
+              loading="lazy"
+            />
+          </figure>
+        </div>
+        <div
+          class="hover:brightness-50 transition-all duration-200 hover:translate-y-[-5px]"
+        >
+          <figure>
+            <img
+              src="images/galler images/image-21.png"
+              class="w-[250px] h-[250px] gallery-item object-cover cursor-pointer rounded-md"
+              alt=""
+              loading="lazy"
+            />
+          </figure>
+        </div>
+        <div
+          class="hover:brightness-50 transition-all duration-200 hover:translate-y-[-5px]"
+        >
+          <figure>
+            <img
+              src="images/galler images/image-22.png"
+              class="w-[250px] h-[250px] gallery-item object-cover cursor-pointer rounded-md"
+              alt=""
+              loading="lazy"
+            />
+          </figure>
+        </div>
+        <div
+          class="hover:brightness-50 transition-all duration-200 hover:translate-y-[-5px]"
+        >
+          <figure>
+            <img
+              src="images/galler images/image-23.png"
+              class="w-[250px] h-[250px] gallery-item object-cover cursor-pointer rounded-md"
+              alt=""
+              loading="lazy"
+            />
+          </figure>
+        </div>
+      </div>
+      <div
+        class="inset-0 bg-black image-overlay hidden fixed z-50 place-content-center w-full"
+      >
+        <button class="absolute close-image top-2 right-2">
+          <span class="sr-only">close</span
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="36"
+            height="36"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="#F9F18F"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="feather feather-x"
+          >
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+        <div class="">
+          <img
+            src=""
+            class="w-[290px] h-full sm:w-[320px] sm:h-full md:w-[600px] md:h-full image-view hidden rounded-sm object-cover"
+            alt=""
+          />
+        </div>
+      </div>
+    </main>
+    <footer
+      id="contact"
+      class="bg-gold py-8 px-14 flex justify-between flex-wrap md:flex-nowrap"
+    >
+      <div class="w-full flex justify-center md:w-auto">
+        <a href="index.html"
+          ><img
+            class="max-w-[100px]"
+            src="images/logo.png"
+            alt="logo"
+            loading="lazy"
+        /></a>
+      </div>
+      <div
+        class="flex flex-col justify-center mt-8 md:mt-0 w-full md:w-auto bg"
+      >
+        <a
+          href="tel:+26481406967"
+          class="text-lightGold underline text-[1.1rem] text-center"
+        >
+          Phone: +264 81 406 3967
+        </a>
+        <a
+          href="mailto:thepowerofpurposeafrica@gmail.com"
+          class="text-lightGold underline text-[1.1rem] break-words text-center"
+        >
+          Email: thepowerofpurposeafrica@gmail.com
+        </a>
+      </div>
+      <div class="flex items-center flex-col justify-center gap-5">
+        <div class="flex mt-8 md:mt-0 justify-center md:w-auto flex-col gap-4">
+          <h2 class="text-[1.2rem] text-lightGold">Personal Socials</h2>
+          <ul class="h-full items-center flex gap-4">
+            <li class="hover:translate-y-[-6px]">
+              <a href="https://www.instagram.com/anthonynm7/" target="_blank"
+                ><img src="images/instagram.svg" alt="instagram"
+              /></a>
+            </li>
+            <li class="hover:translate-y-[-6px]">
+              <a href="https://www.facebook.com/anthony.ngabwe" target="_blank"
+                ><img src="images/facebook.svg" alt="facebook"
+              /></a>
+            </li>
+            <li class="hover:translate-y-[-6px]">
+              <a href="https://www.youtube.com/@AnthonyNgabwe" target="_blank"
+                ><img src="images/youtube.svg" alt="youtube"
+              /></a>
+            </li>
+          </ul>
+        </div>
+        <div class="flex mt-8 md:mt-0 justify-center md:w-auto flex-col gap-4">
+          <h2 class="text-[1.2rem] text-lightGold">Company Socials</h2>
+          <ul class="h-full items-center flex gap-4">
+            <li class="hover:translate-y-[-6px]">
+              <a
+                href="https://www.youtube.com/@thepowerofpurposeafrica3553"
+                target="_blank"
+                ><img src="images/youtube.svg" alt="youtube"
+              /></a>
+            </li>
+            <li class="hover:translate-y-[-6px]">
+              <a href="https://www.instagram.com/anthonynm7/" target="_blank"
+                ><img src="images/instagram.svg" alt="instagram"
+              /></a>
+            </li>
+            <li class="hover:translate-y-[-6px]">
+              <a href="https://www.facebook.com/thepurpose7" target="_blank"
+                ><img src="images/facebook.svg" alt="facebook"
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <div class="bg-gold border-t-2 px-14 py-1">
+      <p class="text-lightGold text-center">Made and Designed by Caleb Odo</p>
+    </div>
+    <script src="src/js/nav.js"></script>
+  </body>
+</html>

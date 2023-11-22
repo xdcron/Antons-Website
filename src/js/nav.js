@@ -23,7 +23,6 @@ closeMenu.addEventListener("click", () => {
 });
 function scrollIntoView(parent, target) {
   document.getElementById(parent).addEventListener("click", function (e) {
-    console.log(e.target.classList.contains(target));
     if (!e.target.classList.contains(target)) return;
     e.preventDefault();
     // MATCHING STRATEGY
